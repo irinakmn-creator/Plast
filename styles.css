@@ -113,15 +113,12 @@ h6,
 }
 
 .logo-img {
-    height: 50px;
-    transition: filter 0.4s ease;
-    filter: brightness(0) invert(1);
-    /* White logo initially */
+    height: 60px;
+    transition: transform 0.4s ease;
 }
 
 #main-header.scrolled .logo-img {
-    filter: none;
-    /* Original colors when scrolled */
+    transform: scale(0.9);
 }
 
 .logo-text {
@@ -140,6 +137,9 @@ h6,
     font-size: 0.95rem;
     font-weight: 500;
     position: relative;
+    display: inline-block;
+    min-width: 100px; /* Increased to accommodate longer translations like 'Strona główna' */
+    text-align: center;
 }
 
 #main-header.scrolled .main-nav a {
@@ -185,6 +185,8 @@ h6,
     border-radius: 4px;
     cursor: pointer;
     font-family: var(--font-body);
+    min-width: 140px; /* Stabilize button width */
+    text-align: center;
 }
 
 .btn-primary {
@@ -210,6 +212,74 @@ h6,
 
 #main-header.scrolled .menu-toggle {
     color: var(--text-color);
+}
+
+/* Language Switcher */
+.lang-switcher {
+    position: relative;
+    margin-right: 15px;
+}
+
+.lang-btn {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    color: var(--white);
+    padding: 6px 0;
+    width: 45px; /* Fixed width to prevent jumping */
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+#main-header.scrolled .lang-btn {
+    color: var(--text-color);
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+.lang-btn:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.lang-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: var(--white);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    margin-top: 0; /* Remove gap */
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 1001;
+    min-width: 120px; /* Wider for full names */
+}
+
+.lang-switcher:hover .lang-dropdown {
+    display: flex;
+}
+
+.lang-dropdown a {
+    padding: 10px 15px;
+    color: var(--text-color);
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-align: left; /* Align full names to the left */
+    border-bottom: 1px solid #eee;
+}
+
+.lang-dropdown a:last-child {
+    border-bottom: none;
+}
+
+.lang-dropdown a:hover {
+    background-color: var(--bg-color);
+    color: var(--red-accent);
 }
 
 /* Hero Section */
@@ -336,6 +406,30 @@ section {
     padding: 0;
     min-height: 500px;
     background-color: #f5f5f5;
+    position: relative;
+}
+
+.intro-section::before,
+.intro-section::before,
+.intro-section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 93px;
+    height: 100%;
+    background-image: url('ornament.png');
+    background-repeat: repeat-y;
+    background-size: 93px auto;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.intro-section::before {
+    left: 0;
+}
+
+.intro-section::after {
+    right: 0;
 }
 
 .intro-left,

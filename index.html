@@ -18,21 +18,30 @@
     <header id="main-header">
         <div class="container header-container">
             <a href="#" class="logo">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Plast_logo.svg/1200px-Plast_logo.svg.png" alt="Plast Logo" class="logo-img">
-                <div class="logo-text">ПЛАСТ<br>АВСТРІЯ</div>
+                <img src="logo.png" alt="Plast Austria Logo" class="logo-img">
             </a>
             
             <nav class="main-nav">
                 <ul>
-                    <li><a href="#" class="active">Головна</a></li>
-                    <li><a href="#">Про Пласт</a></li>
-                    <li><a href="#">Новини</a></li>
-                    <li><a href="#">Команда</a></li>
-                    <li><a href="#">Для Пластунів</a></li>
+                    <li><a href="#" class="active" data-i18n="nav-home">Головна</a></li>
+                    <li><a href="#" data-i18n="nav-about">Про Пласт</a></li>
+                    <li><a href="#" data-i18n="nav-news">Новини</a></li>
+                    <li><a href="#" data-i18n="nav-team">Команда</a></li>
+                    <li><a href="#" data-i18n="nav-scouts">Для Пластунів</a></li>
                 </ul>
             </nav>
             
-            <a href="#" class="btn btn-primary btn-donate">Підтримати</a>
+            <div class="lang-switcher">
+                <button class="lang-btn current-lang">UA</button>
+                <div class="lang-dropdown">
+                    <a href="#" data-lang="uk">Українська</a>
+                    <a href="#" data-lang="de">Deutsch</a>
+                    <a href="#" data-lang="en">English</a>
+                    <a href="#" data-lang="pl">Polski</a>
+                </div>
+            </div>
+            
+            <a href="#" class="btn btn-primary btn-donate" data-i18n="btn-donate">Підтримати</a>
             
             <button class="menu-toggle">
                 <i class="fas fa-bars"></i>
@@ -44,8 +53,8 @@
     <section class="hero-section">
         <div class="hero-overlay"></div>
         <div class="container hero-content">
-            <div class="hero-logo-large">ПЛАСТ</div>
-            <h1 class="hero-title">УКРАЇНСЬКА СКАУТСЬКА ОРГАНІЗАЦІЯ</h1>
+            <div class="hero-logo-large" data-i18n="hero-logo">ПЛАСТ</div>
+            <h1 class="hero-title" data-i18n="hero-title">УКРАЇНСЬКА СКАУТСЬКА ОРГАНІЗАЦІЯ</h1>
         </div>
     </section>
 
@@ -56,24 +65,24 @@
                 <div class="feature-icon icon-news">
                     <i class="far fa-flag"></i>
                 </div>
-                <h3>НОВИНИ</h3>
-                <p>Поза регулярними сходинами Пласт організовує багато заходів як для пластунів, так і для української громади в Австрії</p>
+                <h3 data-i18n="feature-news-title">НОВИНИ</h3>
+                <p data-i18n="feature-news-desc">Поза регулярними сходинами Пласт організовує багато заходів як для пластунів, так і для української громади в Австрії</p>
             </div>
             
             <div class="feature-card">
                 <div class="feature-icon icon-scouts">
                     <i class="fas fa-hand-paper"></i>
                 </div>
-                <h3>ДЛЯ ПЛАСТУНІВ</h3>
-                <p>Сходини, однострої, правильники — все про Пласт</p>
+                <h3 data-i18n="feature-scouts-title">ДЛЯ ПЛАСТУНІВ</h3>
+                <p data-i18n="feature-scouts-desc">Сходини, однострої, правильники — все про Пласт</p>
             </div>
             
             <div class="feature-card">
                 <div class="feature-icon icon-join">
                     <i class="fab fa-gripfire"></i>
                 </div>
-                <h3>ДОЛУЧИТИСЬ ДО ПЛАСТУ</h3>
-                <p>Якщо ти шукаєш нових друзів, романтики, подорожей і пригод — тоді тобі до нас!</p>
+                <h3 data-i18n="feature-join-title">ДОЛУЧИТИСЬ ДО ПЛАСТУ</h3>
+                <p data-i18n="feature-join-desc">Якщо ти шукаєш нових друзів, романтики, подорожей і пригод — тоді тобі до нас!</p>
             </div>
         </div>
     </section>
@@ -82,14 +91,14 @@
     <section class="intro-section">
         <div class="intro-left">
             <div class="intro-content">
-                <p><strong>Пласт</strong> — національна скаутська організація України. Метою Пласту є сприяти всебічному патріотичному вихованню і самовихованню української молоді на засадах християнської моралі.</p>
-                <p>У Пласт в Австрії ми:</p>
+                <p data-i18n="intro-p1"><strong>Пласт</strong> — національна скаутська організація України. Метою Пласту є сприяти всебічному патріотичному вихованню і самовихованню української молоді на засадах християнської моралі.</p>
+                <p data-i18n="intro-p2">У Пласт в Австрії ми:</p>
                 <ul>
-                    <li>• об'єднуємо і виховуємо українську молодь</li>
-                    <li>• мандруємо і таборуємо</li>
-                    <li>• запалюємо іскру в серцях</li>
+                    <li data-i18n="intro-li1">• об'єднуємо і виховуємо українську молодь</li>
+                    <li data-i18n="intro-li2">• мандруємо і таборуємо</li>
+                    <li data-i18n="intro-li3">• запалюємо іскру в серцях</li>
                 </ul>
-                <a href="#" class="read-more">Читати більше</a>
+                <a href="#" class="read-more" data-i18n="intro-more">Читати більше</a>
             </div>
         </div>
         <div class="intro-right video-container">
@@ -106,11 +115,11 @@
         <div class="container">
             <div class="section-header">
                 <i class="far fa-newspaper section-icon-left"></i>
-                <h2 class="section-title">НОВИНИ</h2>
+                <h2 class="section-title" data-i18n="news-section-title">НОВИНИ</h2>
                 <i class="far fa-newspaper section-icon-right"></i>
             </div>
             <div class="section-link-wrapper">
-                <a href="#" class="view-all-link">Всі новини</a>
+                <a href="#" class="view-all-link" data-i18n="view-all">Всі новини</a>
             </div>
             
             <div class="news-grid">
@@ -118,11 +127,11 @@
                 <article class="news-card">
                     <div class="news-image img-1"></div>
                     <div class="news-content">
-                        <h3 class="news-title">Підсумки проекту "Вкорінені в єдності" в Австрії (Bildungsprojekt)</h3>
-                        <p class="news-excerpt">Завдяки фінансовій підтримці програми Еразмус+ Пласт Австрії провів навчальний проект &laquo;Вкорінені в єдності&raquo;...</p>
+                        <h3 class="news-title" data-i18n="news-card1-title">Підсумки проекту "Вкорінені в єдності" в Австрії (Bildungsprojekt)</h3>
+                        <p class="news-excerpt" data-i18n="news-card1-excerpt">Завдяки фінансовій підтримці програми Еразмус+ Пласт Австрії провів навчальний проект &laquo;Вкорінені в єдності&raquo;...</p>
                         <div class="news-meta">
                             <span class="news-date">10/26/2023</span>
-                            <a href="#" class="news-details">Деталі</a>
+                            <a href="#" class="news-details" data-i18n="news-card1-details">Деталі</a>
                         </div>
                     </div>
                 </article>
@@ -131,11 +140,11 @@
                 <article class="news-card">
                     <div class="news-image img-2"></div>
                     <div class="news-content">
-                        <h3 class="news-title">23 березня пластуни вшанували полеглих героїв та борців за волю</h3>
-                        <p class="news-excerpt">У Австрії існує неприбуткова організація "Чорний Хрест", яка займається утриманням поховань періоду війни. У...</p>
+                        <h3 class="news-title" data-i18n="news-card2-title">23 березня пластуни вшанували полеглих героїв та борців за волю</h3>
+                        <p class="news-excerpt" data-i18n="news-card2-excerpt">У Австрії існує неприбуткова організація "Чорний Хрест", яка займається утриманням поховань періоду війни. У...</p>
                         <div class="news-meta">
                             <span class="news-date">3/24/2024</span>
-                            <a href="#" class="news-details">Деталі</a>
+                            <a href="#" class="news-details" data-i18n="news-card2-details">Деталі</a>
                         </div>
                     </div>
                 </article>
@@ -144,11 +153,11 @@
                 <article class="news-card">
                     <div class="news-image img-3"></div>
                     <div class="news-content">
-                        <h3 class="news-title">Офіційно запустив свою роботу осередок Пласту у Зальцбурзі</h3>
-                        <p class="news-excerpt">У нас офіційно запустив свою роботу осередок Пласту у Зальцбурзі! Перші сходини відбулися 1-го березня 2024 ро...</p>
+                        <h3 class="news-title" data-i18n="news-card3-title">Офіційно запустив свою роботу осередок Пласту у Зальцбурзі</h3>
+                        <p class="news-excerpt" data-i18n="news-card3-excerpt">У нас офіційно запустив свою роботу осередок Пласту у Зальцбурзі! Перші сходини відбулися 1-го березня 2024 ро...</p>
                         <div class="news-meta">
                             <span class="news-date">3/18/2024</span>
-                            <a href="#" class="news-details">Деталі</a>
+                            <a href="#" class="news-details" data-i18n="news-card3-details">Деталі</a>
                         </div>
                     </div>
                 </article>
@@ -161,11 +170,11 @@
         <div class="container">
             <div class="section-header">
                 <i class="far fa-smile section-icon-left"></i>
-                <h2 class="section-title">НАША КОМАНДА</h2>
+                <h2 class="section-title" data-i18n="team-section-title">НАША КОМАНДА</h2>
                 <i class="far fa-smile section-icon-right"></i>
             </div>
             <div class="section-link-wrapper">
-                <a href="#" class="view-all-link">Вся команда</a>
+                <a href="#" class="view-all-link" data-i18n="view-all-team">Вся команда</a>
             </div>
             
             <div class="team-grid">
@@ -173,8 +182,8 @@
                 <div class="team-member">
                     <div class="team-image t-img-1"></div>
                     <div class="team-info">
-                        <h3 class="team-name">АНАСТАСІЯ ХАЦКО</h3>
-                        <p class="team-role">Членкиня Крайової Пластової Ради</p>
+                        <h3 class="team-name" data-i18n="team1-name">АНАСТАСІЯ ХАЦКО</h3>
+                        <p class="team-role" data-i18n="team1-role">Членкиня Крайової Пластової Ради</p>
                     </div>
                 </div>
                 
@@ -182,8 +191,8 @@
                 <div class="team-member">
                     <div class="team-image t-img-2"></div>
                     <div class="team-info">
-                        <h3 class="team-name">СОФІЯ АНГЕРЕР</h3>
-                        <p class="team-role">Референтка УПН</p>
+                        <h3 class="team-name" data-i18n="team2-name">СОФІЯ АНГЕРЕР</h3>
+                        <p class="team-role" data-i18n="team2-role">Референтка УПН</p>
                     </div>
                 </div>
                 
@@ -191,8 +200,8 @@
                 <div class="team-member">
                     <div class="team-image t-img-3"></div>
                     <div class="team-info">
-                        <h3 class="team-name">ЮЛІЯ ШЕРЕМЕТА</h3>
-                        <p class="team-role">Референтка УПП</p>
+                        <h3 class="team-name" data-i18n="team3-name">ЮЛІЯ ШЕРЕМЕТА</h3>
+                        <p class="team-role" data-i18n="team3-role">Референтка УПП</p>
                     </div>
                 </div>
             </div>
@@ -204,25 +213,25 @@
         <div class="container">
             <div class="section-header">
                 <i class="fas fa-backpack section-icon-left"></i>
-                <h2 class="section-title">СХОДИНИ</h2>
+                <h2 class="section-title" data-i18n="meetings-section-title">СХОДИНИ</h2>
                 <i class="fas fa-basketball-ball section-icon-right"></i>
             </div>
             
-            <p class="meetings-desc">Починаючи з 2015 року, ПЛАСТ Австрія проводить у Відні регулярні сходини з новаками та юнаками (діти від 6 до 18 років).<br>Зустрічі відбуваються по суботах в Українській Суботній Школі.</p>
+            <p class="meetings-desc" data-i18n="meetings-desc">Починаючи з 2015 року, ПЛАСТ Австрія проводить у Відні регулярні сходини з новаками та юнаками (діти від 6 до 18 років).<br>Зустрічі відбуваються по суботах в Українській Суботній Школі.</p>
             
             <div class="contact-grid">
                 <div class="contact-info">
                     <div class="contact-item">
                         <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
                         <div>
-                            <h4>Адреса</h4>
-                            <p>Akademisches Gymnasium, Beethovenpl. 1, 1010 Wien</p>
+                            <h4 data-i18n="contact-address-title">Адреса</h4>
+                            <p data-i18n="contact-address">Akademisches Gymnasium, Beethovenpl. 1, 1010 Wien</p>
                         </div>
                     </div>
                     <div class="contact-item">
                         <div class="contact-icon"><i class="far fa-comment-alt"></i></div>
                         <div>
-                            <h4>Контакти</h4>
+                            <h4 data-i18n="contact-info-title">Контакти</h4>
                             <a href="mailto:info@plast.or.at" class="contact-email">info@plast.or.at</a>
                         </div>
                     </div>
@@ -243,10 +252,10 @@
     <section class="partners-section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">НАШІ ПАРТНЕРИ</h2>
+                <h2 class="section-title" data-i18n="partners-title">НАШІ ПАРТНЕРИ</h2>
             </div>
             <div class="partners-logos">
-                <div class="partner-logo">Українська суботня школа у Відні</div>
+                <div class="partner-logo" data-i18n="partner1">Українська суботня школа у Відні</div>
                 <div class="partner-logo">Plast World</div>
                 <div class="partner-logo">St. Barbara Church</div>
             </div>
@@ -257,10 +266,10 @@
     <footer class="site-footer">
         <div class="container footer-content">
             <div class="footer-credit">
-                Приготовлено <a href="#">SoftCafé</a>
+                <span data-i18n="footer-credit">Приготовлено</span> <a href="#">SoftCafé</a>
             </div>
             <div class="footer-contact">
-                <a href="mailto:info@plast.or.at" class="footer-link">Контакти</a>
+                <a href="mailto:info@plast.or.at" class="footer-link" data-i18n="footer-contacts">Контакти</a>
             </div>
             <div class="footer-social">
                 <a href="#" class="social-btn"><i class="fab fa-facebook-square"></i></a>
