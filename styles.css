@@ -395,12 +395,11 @@ section {
     position: relative;
 }
 
-.intro-section::before,
-.intro-section::before,
-.intro-section::after {
+.intro-section::before {
     content: '';
     position: absolute;
     top: 0;
+    left: 0;
     width: 93px;
     height: 100%;
     background-image: url('ornament.png');
@@ -408,14 +407,6 @@ section {
     background-size: 93px auto;
     z-index: 1;
     pointer-events: none;
-}
-
-.intro-section::before {
-    left: 0;
-}
-
-.intro-section::after {
-    right: 0;
 }
 
 .intro-left,
