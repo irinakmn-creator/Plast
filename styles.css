@@ -601,33 +601,32 @@ section {
 
 .news-image {
     height: 200px;
-    background-size: cover;
-    background-position: center;
+    overflow: hidden;
 }
 
-.img-1 {
-    background-image: url('https://images.unsplash.com/photo-1533422902705-0a916dc25287?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80');
+.news-card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
 }
 
-.img-2 {
-    background-image: url('https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80');
-}
-
-.img-3 {
-    background-image: url('https://images.unsplash.com/photo-1529156069898-49953eb1b5ae?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80');
+.news-card:hover .news-card-img {
+    transform: scale(1.05);
 }
 
 .news-content {
     padding: 25px;
 }
 
-.news-title {
-    font-size: 1.1rem;
-    margin-bottom: 15px;
-    line-height: 1.4;
-    text-transform: none;
-    font-family: var(--font-heading);
-    font-weight: 700;
+.news-card .news-content .news-title {
+    font-size: 18px !important;
+    margin-bottom: 15px !important;
+    line-height: 1.4 !important;
+    text-transform: none !important;
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 700 !important;
 }
 
 .news-excerpt {
