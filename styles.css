@@ -113,18 +113,19 @@ h6,
 }
 
 .logo-img {
-    height: 60px;
-    transition: transform 0.4s ease;
+    height: 70px;
+    width: auto;
+    transition: height 0.4s ease, filter 0.4s ease;
+    filter: brightness(0) invert(1); /* White logo on dark hero */
 }
 
 #main-header.scrolled .logo-img {
-    transform: scale(0.9);
+    height: 54px;
+    filter: none; /* Restore original colors on white bar */
 }
 
 .logo-text {
-    font-size: 1.2rem;
-    line-height: 1.1;
-    letter-spacing: 1px;
+    display: none;
 }
 
 .main-nav ul {
@@ -517,17 +518,24 @@ section {
 
 .section-icon-left,
 .section-icon-right {
-    font-size: 1.5rem;
+    font-size: 2.8rem;
     color: var(--text-color);
-    opacity: 0.8;
+    opacity: 0.85;
+    flex-shrink: 0;
+}
+
+.section-icon-img {
+    width: auto;
+    height: 48px;
+    flex-shrink: 0;
 }
 
 .section-icon-left {
-    transform: rotate(-10deg);
+    transform: rotate(-8deg);
 }
 
 .section-icon-right {
-    transform: rotate(10deg);
+    transform: rotate(8deg);
 }
 
 .section-title {
