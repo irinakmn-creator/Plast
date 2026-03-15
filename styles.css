@@ -822,29 +822,16 @@ section {
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-}
-
-.map-placeholder {
-    position: relative;
-    width: 100%;
     height: 350px;
 }
 
-.map-placeholder img {
+.contact-map iframe {
+    display: block;
     width: 100%;
     height: 100%;
-    object-fit: cover;
 }
 
-.map-pin {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 3rem;
-    color: var(--red-accent);
-    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
-}
+
 
 /* Partners Section */
 .partners-section {
